@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --naranjaoscuro:#e26b0a;
+            --naranjaclaro:#fabf8f;
+            --verdeclaro:#9bbb59;
+            --verdeoscuro:#76933c;
+            --moradooscuro:#403151;
+            --moradoclaro:#b1a0c7;
+            --azul: #92cddc;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display:grid;
+            grid-template-columns: repeat(26, 1fr);
+            grid-template-rows: repeat(32, 1fr);
+        }
+        #naranja_oscuro{
+            background-color: var(--naranjaclaro);
+            grid-column: 12/14;
+            grid-row: 11/15;
+
+        }
+        #naranja_claro{
+            background-color: var(--naranjaoscuro);
+            grid-column: 12/14;
+            grid-row: 12/14;
+
+        }
+        #verde_claro{
+            background-color: var(--verdeclaro);
+            grid-column: 12/13;
+            grid-row: 19/33;
+        }
+        #verde_claro_1{
+            background-color: var(--verdeclaro);
+            grid-column: 10/12;
+            grid-row: 23/25;
+        }
+        #verde_claro_2{
+            background-color: var(--verdeclaro);
+            grid-column: 9/11;
+            grid-row: 22/24;
+        }
+        #verde_claro_3{
+            background-color: var(--verdeclaro);
+            grid-column: 8/9;
+            grid-row: 22/23;
+        }
+        #verde_oscuro{
+            background-color: var(--verdeoscuro);
+            grid-column: 13/14;
+            grid-row: 19/33;
+        }
+        #verde_oscuro_1{
+            background-color: var(--verdeoscuro);
+            grid-column: 12/16;
+            grid-row: 26/28;
+        }
+        #verde_oscuro_2{
+            background-color: var(--verdeoscuro);
+            grid-column: 15/17;
+            grid-row: 25/27;
+        }
+        #verde_oscuro_3{
+            background-color: var(--verdeoscuro);
+            grid-column: 17/18;
+            grid-row: 25/26
+        }
+        #morado_oscuro{
+            background-color: var(--moradooscuro);
+            grid-column: 12/14;
+            grid-row: 15/16;
+        }
+        #morado_oscuro_1{
+            background-color: var(--moradooscuro);
+            grid-column: 12/14;
+            grid-row: 18/20;
+        }
+        #morado_oscuro_2{
+            background-color: var(--moradooscuro);
+            grid-column: 12/14;
+            grid-row: 18/20;
+        }
+        #morado_oscuro_3{
+            background-color: var(--moradooscuro);
+            grid-column: 12/14;
+            grid-row: 10/12;
+        }
+        #morado_oscuro_4{
+            background-color: var(--moradooscuro);
+            grid-column: 12/14;
+            grid-row: 7/8;
+        }
+        #morado_oscuro_5{
+            background-color: var(--moradooscuro);
+            grid-column: 11/12;
+            grid-row: 8/10;
+        }
+        #morado_oscuro_6{
+            background-color: var(--moradooscuro);
+            grid-column: 14/15;
+            grid-row: 8/10;
+        }
+        #morado_oscuro_7{
+            background-color: var(--moradooscuro);
+            grid-column: 11/12;
+            grid-row: 12/14;
+        }
+        #morado_oscuro_8{
+            background-color: var(--moradooscuro);
+            grid-column: 14/15;
+            grid-row: 12/14;
+        }
+        #morado_oscuro_9{
+            background-color: var(--moradooscuro);
+            grid-column: 11/12;
+            grid-row: 16/18;
+        }
+        #morado_oscuro_10{
+            background-color: var(--moradooscuro);
+            grid-column: 14/15;
+            grid-row: 16/18;
+        }
+        #morado_oscuro_11{
+            background-color: var(--moradooscuro);
+            grid-column: 9/11;
+            grid-row: 19/18;
+        }
+        #morado_oscuro_12{
+            background-color: var(--moradooscuro);
+            grid-column: 9/11;
+            grid-row: 14/15;
+        }
+        #morado_oscuro_13{
+            background-color: var(--moradooscuro);
+            grid-column: 9/11;
+            grid-row: 11/12;
+        }
+        #morado_oscuro_14{
+            background-color: var(--moradooscuro);
+            grid-column: 9/11;
+            grid-row: 7/8;
+        }
+        #morado_oscuro_15{
+            background-color: var(--moradooscuro);
+            grid-column: 8/9;
+            grid-row: 8/11;
+        }
+        #morado_oscuro_16{
+            background-color: var(--moradooscuro);
+            grid-column: 8/9;
+            grid-row: 12/14;
+        }
+        #morado_oscuro_17{
+            background-color: var(--moradooscuro);
+            grid-column: 8/9;
+            grid-row: 15/18;
+        }
+        #morado_oscuro_18{
+            background-color: var(--moradooscuro);
+            grid-column: 17/18;
+            grid-row: 15/18;
+        }
+        #morado_oscuro_19{
+            background-color: var(--moradooscuro);
+            grid-column: 17/18;
+            grid-row: 12/14;
+        }
+        #morado_oscuro_20{
+            background-color: var(--moradooscuro);
+            grid-column: 17/18;
+            grid-row: 8/11;
+        }
+        #morado_oscuro_21{
+            background-color: var(--moradooscuro);
+            grid-column: 15/17;
+            grid-row: 7/8;
+        }
+        #morado_oscuro_22{
+            background-color: var(--moradooscuro);
+            grid-column: 15/17;
+            grid-row: 11/12;
+        }
+        #morado_oscuro_23{
+            background-color: var(--moradooscuro);
+            grid-column: 15/17;
+            grid-row: 14/15;
+        }
+        #morado_oscuro_24{
+            background-color: var(--moradooscuro);
+            grid-column: 15/17;
+            grid-row: 18/19;
+        }
+        #morado_claro{
+            background-color: var(--moradoclaro);
+            grid-column: 15/17;
+            grid-row: 15/18;
+        }
+        #morado_claro_1{
+            background-color: var(--moradoclaro);
+            grid-column: 15/17;
+            grid-row: 12/14;
+        }
+        #morado_claro_2{
+            background-color: var(--moradoclaro);
+            grid-column: 15/17;
+            grid-row: 8/11;
+        }
+        #morado_claro_3{
+            background-color: var(--moradoclaro);
+            grid-column: 14/15;
+            grid-row: 10/12;
+        }
+        #morado_claro_4{
+            background-color: var(--moradoclaro);
+            grid-column: 14/15;
+            grid-row: 14/16;
+        }
+        #morado_claro_5{
+            background-color: var(--moradoclaro);
+            grid-column: 12/14;
+            grid-row: 8/10;
+        }
+        #morado_claro_6{
+            background-color: var(--moradoclaro);
+            grid-column: 12/14;
+            grid-row: 16/18;
+        }
+        #morado_claro_7{
+            background-color: var(--moradoclaro);
+            grid-column: 11/12;
+            grid-row: 10/12;
+        }
+        #morado_claro_8{
+            background-color: var(--moradoclaro);
+            grid-column: 11/12;
+            grid-row: 14/16;
+        }
+        #morado_claro_9{
+            background-color: var(--moradoclaro);
+            grid-column: 9/11;
+            grid-row: 8/11;
+        }
+        #morado_claro_10{
+            background-color: var(--moradoclaro);
+            grid-column: 9/11;
+            grid-row: 12/14;
+        }
+        #morado_claro_11{
+            background-color: var(--moradoclaro);
+            grid-column: 9/11;
+            grid-row: 15/18;
+        }
+        #fondo{
+            background-color: var(--azul);
+            grid-column: 1/27;
+            grid-row: 1/33;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fondo"></div>
+        <div id="morado_oscuro"></div>
+        <div id="morado_oscuro_1"></div>
+        <div id="morado_oscuro_2"></div>
+        <div id="morado_oscuro_3"></div>
+        <div id="morado_oscuro_4"></div>
+        <div id="morado_oscuro_5"></div>
+        <div id="morado_oscuro_6"></div>
+        <div id="morado_oscuro_7"></div>
+        <div id="morado_oscuro_8"></div>
+        <div id="morado_oscuro_9"></div>
+        <div id="morado_oscuro_10"></div>
+        <div id="morado_oscuro_11"></div>
+        <div id="morado_oscuro_12"></div>
+        <div id="morado_oscuro_13"></div>
+        <div id="morado_oscuro_14"></div>
+        <div id="morado_oscuro_15"></div>
+        <div id="morado_oscuro_16"></div>
+        <div id="morado_oscuro_17"></div>
+        <div id="morado_oscuro_18"></div>
+        <div id="morado_oscuro_19"></div>
+        <div id="morado_oscuro_20"></div>
+        <div id="morado_oscuro_21"></div>
+        <div id="morado_oscuro_22"></div>
+        <div id="morado_oscuro_23"></div>
+        <div id="morado_oscuro_24"></div>
+        <div id="morado_normal"></div>
+        <div id="morado_claro"></div>
+        <div id="morado_claro_1"></div>
+        <div id="morado_claro_2"></div>
+        <div id="morado_claro_3"></div>
+        <div id="morado_claro_4"></div>
+        <div id="morado_claro_5"></div>
+        <div id="morado_claro_6"></div>
+        <div id="morado_claro_7"></div>
+        <div id="morado_claro_8"></div>
+        <div id="morado_claro_9"></div>
+        <div id="morado_claro_10"></div>
+        <div id="morado_claro_11"></div>
+        <div id="verde_oscuro"></div>
+        <div id="verde_oscuro_1"></div>
+        <div id="verde_oscuro_2"></div>
+        <div id="verde_oscuro_3"></div>
+        <div id="verde_claro"></div>
+        <div id="verde_claro_1"></div>
+        <div id="verde_claro_2"></div>
+        <div id="verde_claro_3"></div>
+        <div id="naranja_oscuro"></div>
+        <div id="naranja_claro"></div>
+        <a><h3 align="left">Ádel Guerchi Verdú</h3></a></th>
+        <a href="https://www.instagram.com/guerchiva/"><h3 align="left">@guerchiva</h3></a></th>
+    </div>
+</body>
+</html>
